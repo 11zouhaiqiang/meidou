@@ -17,7 +17,6 @@ def exception_handler(exc, context):
     :return: Response 响应对象
     """
     response = drf_exception_handler(exc, context)
-
     if response is None:
 
         view = context['view']

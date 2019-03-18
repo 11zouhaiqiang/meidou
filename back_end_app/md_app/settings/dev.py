@@ -91,23 +91,26 @@ DATABASES = {
 CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://ali-data.div:6379/0",
+        "LOCATION": "redis://ali-data.div.plus:6379/0",
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
+            "PASSWORD": "qweasdzxc123"
         }
     },
     "session": {
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://ali-data.div:6379/1",
+        "LOCATION": "redis://ali-data.div.plus:6379/1",
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
+            "PASSWORD": "qweasdzxc123"
         }
     },
     "verify_code": {
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://ali-data.div:6379/2",
+        "LOCATION": "redis://ali-data.div.plus:6379/2",
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
+            "PASSWORD": "qweasdzxc123"
         }
     }
 }
